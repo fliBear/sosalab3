@@ -1,4 +1,5 @@
 import unittest
+import xmlrunner
 from Dodatak_A import OperationsManager
 import math
 
@@ -16,4 +17,4 @@ class TestDivision(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output="test-reports"))
